@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rajath Krishna - CCNA-certified Network Engineer in Wayanad, Kerala. Expert in FTTH, OSPF, VLANs, Cisco, Huawei, Juniper. Open to opportunities at Cisco, Nokia, BSNL, RailTel." />
+  <meta name="keywords" content="Network Engineer, CCNA, FTTH, Cisco, Kerala, Wayanad, OSPF, VLAN, Juniper, Huawei, KFON" />
+  <meta name="author" content="Rajath Krishna" />
+  <meta property="og:title" content="Rajath Krishna | Network Engineer" />
+  <meta property="og:description" content="CCNA-certified Network Engineer with 2.9+ years in FTTH networks, Layer 2/3, VLANs, and network security." />
+  <meta property="og:type" content="website" />
+  <title>Rajath Krishna | Network Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CANVAS BACKGROUND ========== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">[</span>RK<span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HOME ========== -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-badge" data-aos="fade-down">
+        <i class="fas fa-circle-dot pulse-dot"></i>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name" data-aos="fade-up" data-aos-delay="100">
+        Rajath Krishna
+      </h1>
+      <div class="hero-role" data-aos="fade-up" data-aos-delay="200">
+        <span class="role-prefix">$ whoami &rarr; </span>
+        <span id="typed-role"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-tagline" data-aos="fade-up" data-aos-delay="300">
+        Architecting reliable networks · Securing digital infrastructure · CCNA Certified
+      </p>
+      <div class="hero-location" data-aos="fade-up" data-aos-delay="350">
+        <i class="fas fa-location-dot"></i> Wayanad, Kerala, India
+      </div>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+        <a href="resume.pdf" class="btn btn-outline" download>
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+        <div class="stat">
+          <span class="stat-val">2.9+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-val">3</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-val">KFON</span>
+          <span class="stat-label">Lead Project</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
+      <div class="network-diagram">
+        <div class="net-node core" title="Core Router">
+          <i class="fas fa-circle-nodes"></i>
+        </div>
+        <div class="net-node n1" title="Switch L3">
+          <i class="fas fa-network-wired"></i>
+        </div>
+        <div class="net-node n2" title="Firewall">
+          <i class="fas fa-shield-halved"></i>
+        </div>
+        <div class="net-node n3" title="OLT">
+          <i class="fas fa-tower-broadcast"></i>
+        </div>
+        <div class="net-node n4" title="Cloud / WAN">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <div class="net-node n5" title="End Device">
+          <i class="fas fa-laptop"></i>
+        </div>
+        <svg class="net-lines" viewBox="0 0 300 300">
+          <line x1="150" y1="150" x2="80" y2="80" class="net-line animated-line" />
+          <line x1="150" y1="150" x2="220" y2="80" class="net-line animated-line" style="animation-delay:.3s" />
+          <line x1="150" y1="150" x2="60" y2="200" class="net-line animated-line" style="animation-delay:.6s" />
+          <line x1="150" y1="150" x2="240" y2="200" class="net-line animated-line" style="animation-delay:.9s" />
+          <line x1="150" y1="150" x2="150" y2="255" class="net-line animated-line" style="animation-delay:1.2s" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">// About</span>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right">
+          <p class="about-lead">
+            CCNA-certified Network Engineer with <strong>2.9+ years</strong> of hands-on experience designing, deploying, and troubleshooting complex network infrastructures across FTTH, Layer 2/3, and enterprise environments.
+          </p>
+          <p>
+            Currently leading the <strong>KFON (Kerala Fibre Optic Network) project</strong> at Railwire ICT, coordinating with LNPs and cable operators to expand high-speed internet access across Wayanad district. My toolkit spans Cisco, Huawei, and Juniper platforms—from OLT/ONT FTTH deployments to VPN tunnels and ACL-hardened perimeters.
+          </p>
+          <p>
+            Beyond the CLI, I'm actively pursuing the <strong>Certified SOC Analyst</strong> certification from EC-Council, bridging my networking depth with a growing focus on cybersecurity operations and threat detection.
+          </p>
+          <div class="about-quick-facts">
+            <div class="quick-fact"><i class="fas fa-envelope"></i> rajathkrishna83@gmail.com</div>
+            <div class="quick-fact"><i class="fas fa-phone"></i> +91 9544004938</div>
+            <div class="quick-fact"><i class="fas fa-location-dot"></i> Wayanad, Kerala, India</div>
+            <div class="quick-fact"><i class="fab fa-linkedin"></i> linkedin.com/in/rajath-krishna-3042a627a</div>
+          </div>
+        </div>
+        <div class="about-timeline" data-aos="fade-left">
+          <h3 class="timeline-title">Career Journey</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-marker"></div>
+              <div class="tl-body">
+                <span class="tl-date">Sep 2023 – Present</span>
+                <h4>Network Engineer</h4>
+                <p>Railwire ICT, Wayanad — Leading KFON FTTH deployment</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-marker"></div>
+              <div class="tl-body">
+                <span class="tl-date">Internship</span>
+                <h4>IoT Product Developer</h4>
+                <p>Laxmiinfotek, Ernakulam — Embedded Technology</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-marker"></div>
+              <div class="tl-body">
+                <span class="tl-date">Education</span>
+                <h4>Diploma, Electronics Engineering</h4>
+                <p>Govt. Polytechnic College Meenangadi · CGPA 8.0/10</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-marker active"></div>
+              <div class="tl-body">
+                <span class="tl-date">Now</span>
+                <h4>Pursuing CSA (EC-Council)</h4>
+                <p>Expanding into SOC operations & threat analysis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">// Skills</span>
+        <h2>Technical Arsenal</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Networking Protocols -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="skill-card-icon"><i class="fas fa-route"></i></div>
+          <h3>Networking Protocols</h3>
+          <div class="skill-tags">
+            <span class="tag">TCP/IP</span><span class="tag">OSPF</span><span class="tag">RIP</span>
+            <span class="tag">DHCP</span><span class="tag">DNS</span><span class="tag">VLAN</span>
+            <span class="tag">VTP</span><span class="tag">STP</span><span class="tag">ARP</span>
+            <span class="tag">NAT</span><span class="tag">IPv4</span><span class="tag">IPv6</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+            <span class="skill-pct">90%</span>
+          </div>
+        </div>
+
+        <!-- Network Security -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-card-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>Network Security</h3>
+          <div class="skill-tags">
+            <span class="tag">Firewall Config</span><span class="tag">ACL</span>
+            <span class="tag">VPN</span><span class="tag">Packet Analysis</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="82"></div></div>
+            <span class="skill-pct">82%</span>
+          </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-card-icon"><i class="fas fa-tower-broadcast"></i></div>
+          <h3>Technologies</h3>
+          <div class="skill-tags">
+            <span class="tag">FTTH</span><span class="tag">LAN</span><span class="tag">WAN</span>
+            <span class="tag">Ethernet</span><span class="tag">MPLS</span><span class="tag">VPN</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+            <span class="skill-pct">88%</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-card-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="tag">Wireshark</span><span class="tag">Packet Tracer</span>
+            <span class="tag">GNS3</span><span class="tag">EVE-NG</span>
+            <span class="tag">PuTTY</span><span class="tag">Ansible</span>
+            <span class="tag">NMS</span><span class="tag">OSS Tools</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+            <span class="skill-pct">85%</span>
+          </div>
+        </div>
+
+        <!-- Devices -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-card-icon"><i class="fas fa-server"></i></div>
+          <h3>Hardware Platforms</h3>
+          <div class="skill-tags">
+            <span class="tag">Cisco Routers</span><span class="tag">Cisco Switches</span>
+            <span class="tag">Huawei</span><span class="tag">Juniper</span>
+            <span class="tag">OLT</span><span class="tag">ONT</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="87"></div></div>
+            <span class="skill-pct">87%</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="skill-card-icon"><i class="fas fa-language"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Malayalam — Native</span>
+            <span class="tag">English — Professional</span>
+            <span class="tag">Hindi — Conversational</span>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar"><div class="skill-fill" data-pct="95"></div></div>
+            <span class="skill-pct">95%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">// Experience</span>
+        <h2>Work History</h2>
+      </div>
+      <div class="exp-timeline">
+
+        <div class="exp-card" data-aos="fade-up">
+          <div class="exp-left">
+            <div class="exp-icon"><i class="fas fa-network-wired"></i></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-period"><i class="fas fa-calendar-days"></i> Sep 2023 – Present</span>
+              <span class="exp-badge active-badge">Current</span>
+            </div>
+            <h3 class="exp-title">Network Engineer</h3>
+            <p class="exp-company"><i class="fas fa-building"></i> Railwire ICT · Wayanad, Kerala</p>
+            <ul class="exp-list">
+              <li><i class="fas fa-chevron-right"></i> Lead implementation of the <strong>KFON (Kerala Fibre Optic Network)</strong> project across Wayanad district</li>
+              <li><i class="fas fa-chevron-right"></i> Deploy and troubleshoot <strong>FTTH infrastructure</strong> including OLT/ONT configuration</li>
+              <li><i class="fas fa-chevron-right"></i> Resolve Layer 2/3 issues — STP loops, VLAN misconfigurations, routing anomalies</li>
+              <li><i class="fas fa-chevron-right"></i> Configure <strong>VLAN, DHCP, NAT</strong> for multi-tenant environments</li>
+              <li><i class="fas fa-chevron-right"></i> Continuous network monitoring and performance optimization via NMS/OSS tools</li>
+              <li><i class="fas fa-chevron-right"></i> Coordinate with cable operators and <strong>Local Network Providers (LNPs)</strong></li>
+            </ul>
+            <div class="exp-techs">
+              <span class="tech-chip">Cisco</span><span class="tech-chip">Huawei</span>
+              <span class="tech-chip">FTTH</span><span class="tech-chip">OLT</span>
+              <span class="tech-chip">OSPF</span><span class="tech-chip">VLAN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="exp-left">
+            <div class="exp-icon"><i class="fas fa-microchip"></i></div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-period"><i class="fas fa-calendar-days"></i> Internship</span>
+              <span class="exp-badge intern-badge">Internship</span>
+            </div>
+            <h3 class="exp-title">IoT Intern — Embedded Technology</h3>
+            <p class="exp-company"><i class="fas fa-building"></i> Laxmiinfotek · Ernakulam, Kerala</p>
+            <ul class="exp-list">
+              <li><i class="fas fa-chevron-right"></i> Developed IoT-based products using embedded systems and firmware</li>
+              <li><i class="fas fa-chevron-right"></i> Built <strong>Gesture Vocalizer</strong> — ESP32 + flex sensors converting hand gestures to speech for speech-impaired users</li>
+              <li><i class="fas fa-chevron-right"></i> Integrated APR33A3 voice module for real-time audio synthesis</li>
+            </ul>
+            <div class="exp-techs">
+              <span class="tech-chip">ESP32</span><span class="tech-chip">IoT</span>
+              <span class="tech-chip">Embedded C</span><span class="tech-chip">APR33A3</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">// Projects</span>
+        <h2>Featured Work</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-hand-point-up"></i></div>
+            <div class="project-links">
+              <span class="project-type">Hardware + Software</span>
+            </div>
+          </div>
+          <h3>Gesture Vocalizer</h3>
+          <p>Assistive device that converts hand gestures into real-time speech output — enabling communication for speech-impaired individuals. Uses flex sensor readings to identify gestures and triggers APR33A3 audio playback via ESP32.</p>
+          <div class="project-stack">
+            <span class="stack-tag">ESP32</span>
+            <span class="stack-tag">APR33A3</span>
+            <span class="stack-tag">Flex Sensors</span>
+            <span class="stack-tag">Embedded C</span>
+            <span class="stack-tag">IoT</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-featured-badge">Featured</div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-diagram-project"></i></div>
+            <div class="project-links">
+              <span class="project-type">Network Design</span>
+            </div>
+          </div>
+          <h3>Small ISP Network Deployment</h3>
+          <p>Full-scale ISP simulation in Cisco Packet Tracer: routers, managed switches, firewall, DNS and HTTP servers, wireless tower, and client subnets. Implemented ACL policy and port security for hardened edge.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Cisco Packet Tracer</span>
+            <span class="stack-tag">Router</span>
+            <span class="stack-tag">Firewall</span>
+            <span class="stack-tag">DNS Server</span>
+            <span class="stack-tag">ACL</span>
+            <span class="stack-tag">Port Security</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">// Certifications</span>
+        <h2>Credentials</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="cert-badge-wrap">
+            <div class="cert-badge in-progress">
+              <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <div class="cert-status ongoing">In Progress</div>
+          </div>
+          <div class="cert-body">
+            <h3>Certified SOC Analyst (CSA)</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> EC-Council</p>
+            <p class="cert-desc">Security operations center fundamentals, SIEM, log analysis, incident response, and threat intelligence workflows.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-badge-wrap">
+            <div class="cert-badge verified">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="cert-status done">Certified</div>
+          </div>
+          <div class="cert-body">
+            <h3>Cisco DevNet Associate</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Cisco Systems</p>
+            <p class="cert-desc">Network automation, programmability, APIs, Ansible, and infrastructure-as-code for modern network management.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-badge-wrap">
+            <div class="cert-badge verified gold">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="cert-status done">Certified</div>
+          </div>
+          <div class="cert-body">
+            <h3>Cisco CCNA</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Cisco Systems</p>
+            <p class="cert-desc">Routing & switching, OSPF, EIGRP, VLANs, STP, ACL, NAT, IPv6, and network fundamentals. Industry-standard certification.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="cert-badge-wrap">
+            <div class="cert-badge verified">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="cert-status done">Badge</div>
+          </div>
+          <div class="cert-body">
+            <h3>Ethical Hacker Badge</h3>
+            <p class="cert-issuer"><i class="fas fa-award"></i> Cisco Networking Academy</p>
+            <p class="cert-desc">Ethical hacking techniques, penetration testing concepts, vulnerability assessment, and cybersecurity fundamentals.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">// Contact</span>
+        <h2>Let's Connect</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <p class="contact-intro">Open to opportunities at Cisco, Nokia, Juniper Networks, RailTel, BSNL, BEL, and forward-thinking networking teams globally.</p>
+
+          <div class="contact-links">
+            <a href="mailto:rajathkrishna83@gmail.com" class="contact-link">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-val">rajathkrishna83@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919544004938" class="contact-link">
+              <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-val">+91 9544004938</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/rajath-krishna-3042a627a" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-val">rajath-krishna-3042a627a</span>
+              </div>
+            </a>
+            <div class="contact-link no-link">
+              <div class="contact-link-icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <span class="contact-link-label">Location</span>
+                <span class="contact-link-val">Wayanad, Kerala, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map embed -->
+          <div class="map-wrap" data-aos="fade-up">
+            <iframe
+              title="Wayanad location"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=75.7,11.5,76.3,11.9&layer=mapnik&marker=11.69,76.07"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="map-overlay"><i class="fas fa-location-dot"></i> Wayanad, Kerala</div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Job opportunity / Collaboration / Other" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" id="form-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Rajath Krishna</span>
+      <span class="footer-copy">Designed & built with precision · &copy; 2024</span>
+      <div class="footer-socials">
+        <a href="mailto:rajathkrishna83@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/rajath-krishna-3042a627a" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
